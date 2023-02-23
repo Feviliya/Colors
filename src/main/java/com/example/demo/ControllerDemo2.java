@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 public class ControllerDemo2 {
-		@Value("${value}")
-		private String name; 
+		@Value("${color}")
+		private String color; 
 		
 		@GetMapping("/hello")
 		public String hell() {
-		return "Welcome to String Boot"+name;
+		return "Your favourite color is "+color;
 	}
 }
